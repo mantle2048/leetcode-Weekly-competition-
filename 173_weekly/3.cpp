@@ -17,6 +17,7 @@ public:
         for(int i = 0; i < n; i++){
             int curCity = 0;
             for(int j = 0; j < n; j++){
+                if(dis[i][j] == -1 ) continue;
                 if(i == j || dp[i][j] > distanceThreshold) continue;
                 curCity++;
             }
