@@ -46,3 +46,24 @@ public:
         return ans;
     }
 };
+
+
+        // for(int i = 0; i < n; i++){
+        //     int cur = 0;
+        //     for(int j = 0; j < m; j++){
+        //         cur = cur * 2 + seats[i];
+        //     }
+        //     buf.push_back(cur);
+        // }
+        // for(int i = 1; i <= n; i++){
+        //     int cur = buf[i]; int pre = buf[i - 1];
+        //     bool flag = false;
+        //     for(int j = 0; j < m; j++){
+        //         if(((cur>>j) & 1) == 0) continue; //cur的j位如果不能坐就继续下一位
+        //         if(seats[i - 1][j] == '#') flag = false; //如果第i行实际的seats中第j位不能坐，那么
+        //         if(j >= 1 && ((cur>>(j - 1))&1)) flag ==false; //j位置的左边能不能行
+        //         if(j + 1 < m && ((cur>>(j + 1))&1)) flag = false; //j位置的右边
+        //         if(j >= 1 && ((pre>>(j - 1))&1)) flag = false; //左前方
+        //         if(j + 1 < m && ((pre>>(j + 1))&1)) flag = false; //左后方
+        //     }
+        // }

@@ -14,7 +14,6 @@ public:
             ::dp[l][r] = dfs(l + 1, r - 1, s);
         else
             ::dp[l][r] = min(dfs(l + 1, r, s), dfs(l, r - 1, s)) + 1;
-        cout << "dp[" << l << "][" << r << "] = " << ::dp[l][r] << endl;
         return ::dp[l][r];
     }
     int dp(int l, int r, const string& s, int n){
