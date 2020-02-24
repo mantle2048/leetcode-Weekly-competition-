@@ -22,5 +22,7 @@
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-175/
 ## 第176周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-176/
+## 第20 双周赛
+题目🔗：https://leetcode-cn.com/contest/biweekly-contest-20/
 ## 第177周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-177/
