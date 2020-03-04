@@ -26,3 +26,85 @@
 题目🔗：https://leetcode-cn.com/contest/biweekly-contest-20/
 ## 第177周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-177/
+## 第178周周赛
+题目🔗：https://leetcode-cn.com/contest/weekly-contest-178/
+
+
+
+### **有时间把之前这些周的题目中的tips也总结过来**
+
+### **DFS模板(有空刷完算法ABC的深搜模块)**
+### **无论是BFS还是DFS都要维护一个Visited[]来判断当前状态是否已经访问过了，一定是确实到达了这个点才对visited数组进行更新(对于二叉树不需要)**
+```c++
+void dfs()//参数用来表示状态  
+{  
+    if(到达终点状态)  
+    {  
+        ...//根据题意添加  
+        return;  
+    }  
+    if(越界或者是不合法状态)  
+        return;  
+    if(特殊状态)//剪枝
+        return ;
+    for(扩展方式)  
+    {  
+        if(扩展方式所达到状态合法)  
+        {  
+            修改操作;//根据题意来添加  
+            标记；  
+            dfs（）；  
+            (还原标记)；  
+            //是否还原标记根据题意  
+            //如果加上（还原标记）就是 回溯法  
+        }  
+ 
+    }  
+}  
+```
+
+### 二维Vector 初始化
+- vector< vector<int>> tmp(10,      vector<int>(10,0));
+
+### 二叉树层次遍历并记录每一层的结点数的方法： BFS的同时用 count记录当前层的节点总数， newState记录下一层的节点总数， cur记录当前遍历到哪个节点
+```c++
+while(!Q.empty()){
+    TreeNode* tmp = Q.front(); Q.pop();
+    tt.push_back(tmp->val);
+    if(tmp->left != NULL) Q.push(tmp->left), nextCount++;
+    if(tmp->right != NULL) Q.push(tmp->right), nextCount++;
+    cur++;
+    if(cur == Count){
+        buf.push_back(tt);
+        tt.clear();
+        cur = 0;
+        Count = nextCount;
+        nextCount = 0;
+    }
+}
+```
+### 只要看到地图优先想bfs or dfs 再想 迪杰斯特拉 SPFA　再想ＤＰ
+
+### scanf 从控制台输入 fscanf 从文件输入 sscanf 从指定字符串输入
+### 日期类题目：
+- sscanf(date.c_str(), "%d-%d-%d", &year, &month, &day); 格式化读取年月日
+- scanf 从控制台输入 fscanf 从文件输入 sscanf 从指定字符串输入
+- #define is_year(x) (x % 400 == 0) || (x % 4 ==0 && x % 100 !=0) ? 1 : 0
+```c++
+sscanf(date.c_str(), "%d-%d-%d", &year, &month, &day);
+        int month_length[] = {31, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30};
+        int ans = 0;
+        while (year != 1971 or month != 1 or day != 1) {
+            ++ans;
+            if (--day == 0)
+                if (--month == 0)
+                    --year;
+            if (day == 0) {
+                day = month_length[month];
+                if (month == 2 && leap_year(year))
+                    ++day;
+            }
+            if (month == 0)
+                month = 12;
+        }
+```
