@@ -28,6 +28,11 @@
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-177/
 ## 第178周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-178/
+## 第21 双周赛
+题目🔗：https://leetcode-cn.com/contest/biweekly-contest-21/
+## 第179周周赛
+题目🔗：https://leetcode-cn.com/contest/weekly-contest-179/
+
 
 
 
@@ -108,3 +113,6 @@ sscanf(date.c_str(), "%d-%d-%d", &year, &month, &day);
                 month = 12;
         }
 ```
+
+### // tips：当要求有限个字母或数字的有限个状态时，要记得联想到状态压缩技巧 // tips: 字符串灵活使用前缀和
+### cnt[26]统计字母频次的专用数组！！！
