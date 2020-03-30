@@ -16,28 +16,31 @@
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-173/
 ## 第174周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-174/
-## 第19 双周赛
-题目🔗：https://leetcode-cn.com/contest/biweekly-contest-19/
 ## 第175周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-175/
 ## 第176周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-176/
-## 第20 双周赛
-题目🔗：https://leetcode-cn.com/contest/biweekly-contest-20/
 ## 第177周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-177/
 ## 第178周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-178/
-## 第21 双周赛
-题目🔗：https://leetcode-cn.com/contest/biweekly-contest-21/
 ## 第179周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-179/
 ## 第180周周赛
 题目🔗：https://leetcode-cn.com/contest/weekly-contest-180/
+## 第181周周赛
+题目🔗：https://leetcode-cn.com/contest/weekly-contest-181/
 
+## 第19 双周赛
+题目🔗：https://leetcode-cn.com/contest/biweekly-contest-19/
+## 第20 双周赛
+题目🔗：https://leetcode-cn.com/contest/biweekly-contest-20/
+## 第21 双周赛
+题目🔗：https://leetcode-cn.com/contest/biweekly-contest-21/
+## 第22 双周赛
+题目🔗：https://leetcode-cn.com/contest/biweekly-contest-22/
 
-
-
+## 最近毕设的事情有点忙，182周鸽了/滑稽
 ### **有时间把之前这些周的题目中的tips也总结过来**
 
 ### **DFS模板(有空刷完算法ABC的深搜模块)**
@@ -130,3 +133,5 @@ sscanf(date.c_str(), "%d-%d-%d", &year, &month, &day);
 //vector 从大到小排序 sort(tmp.begin(), tmp.end(), greater<vector<int>>()) || sort(tmp.rbegin(),tmp.rend())
 // 乘方函数 pow（x,y) x^y
 ```
+
+### 如果答案的计算公式 =  A * min(B)，那我们不妨枚举B的中的所有值，另一项得到最优解，那么就很有可能找到我们需要的值
